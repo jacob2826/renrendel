@@ -34,7 +34,7 @@ resultrtk = re.findall(r'_rtk=(.*?)&',result)
 renrenrtk = resultrtk[0]
 print renrenrtk
 
-for i in range(0, max_pagenums-1):
+for i in range(0, max_pagenums):
     #获取状态页
     statusurl = 'http://3g.renren.com/status/getdoing.do?&sid='+renrensid+'curpage='+str(i)
     statuspage = opener.open(statusurl).read()
